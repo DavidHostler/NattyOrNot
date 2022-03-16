@@ -1,5 +1,5 @@
 # NattyOrNot
-This is a project I'm doing for fun and humour, more or less.
+This is a project born of gym-bro humour and a general love of software development.
 
 
 This project is a full stack web application that permits users to upload an image of their physique and get a response as to whether they 
@@ -12,7 +12,7 @@ that this person is enhanced.
 
 ## MOTIVATION
 
-The primary motivation for this project is mostly from an inside joke in the bodybuilding community . While I do have a background in mathematical physics and machine learning, I am not 
+The primary motivation for this project is mostly from an inside joke in the bodybuilding community. While I do have a background in mathematical physics and machine learning, I am not 
 Greg Doucette (an individual famous for his ability to identify whether somebody is a natural lifter!)
 Some suspect that Coach Greg is himself, not unlike my program, an artificial intelligence designed to classify physiques.
 Of course, the neural network I've trained was trained on data that I combed through based on what type of physique looks roided and which one does not.
@@ -25,7 +25,7 @@ if it accuses you of being on chemicals.
 The primary goal of this app is to showcase a complete web application with machine-learning powered capabilities.
 
 It demonstrates not just how easy basic web development is with Python and Javascript- but also how to make use of a binary classifier network using Tensorflow.
-
+Additionally, this project is run 100% locally on the hardware of any user who clones this repo. This means that when you upload pictures, I cannot see them because they are still on your device and have no way of reaching the internet. I feel that this should be obvious, but I'd like to make laypersons comfortable with this project too for the sake of spreading the novelty. 
 
 ## STEPS
 
@@ -73,6 +73,16 @@ which you can access at url localhost:8000.
 You could run the React Javascript server on localhost:3000 likewise by typing the following in the main project folder:
 
 ### cd webapp && npm start
+
+Currently, this repository is not fully completed, so apologies if a few of the described features are currently missing. 
+The app should be fully functional before the end of March.
+Additionally, at the time of this first commit, it has been barely a week since I started this project, so trust that it won't take long to make the 
+app totally functional.
+
+Additionally, if people think this is cool, then I will develop a mobile version with React-Native for use on cell phones.
+This is more convenient, since people tend to store physique pics on their cell phones rather than on their personal computers.
+
+
 
 
 
