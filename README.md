@@ -82,6 +82,7 @@ app totally functional.
 Additionally, if people think this is cool, then I will develop a mobile version with React-Native for use on cell phones.
 This is more convenient, since people tend to store physique pics on their cell phones rather than on their personal computers.
 
+I hope you enjoy this app and may it inspire you to acquire more gainz!!! :)
 
 
 
@@ -95,8 +96,7 @@ This is more convenient, since people tend to store physique pics on their cell 
 
 
 
-
-
+ 
 
 
 
