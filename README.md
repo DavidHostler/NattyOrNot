@@ -32,23 +32,23 @@ It demonstrates not just how easy basic web development is with Python and Javas
 
 Obviously, first
 
-# git clone https://github.com/DavidHostler/NattyOrNot.git
+### git clone https://github.com/DavidHostler/NattyOrNot.git
 
 and then open it wherever you decided to clone the repository.
 
 Then, 
 
-## cd NattyOrNot
+### cd NattyOrNot
 
 Access the backend folder, and then activate the virtual environment ("natty")
 
-## cd backend && source natty/bin/activate 
+### cd backend && source natty/bin/activate 
 
 You should now see "(natty)" to the left of your terminal filepath.
 
 Proceed to install the required Python dependencies for the environment
 
-## pip install -r requirements.txt
+### pip install -r requirements.txt
 
 There are a few that I will add later to requirements.txt to save users a little time adding any additional installs, but please bear with me til then!
 
@@ -56,23 +56,23 @@ You should have everything in Python set up to use the Django REST Framework; ne
 
 Exit backend and access webapp, our frontend web app
 
-## cd .. && cd webapp
+### cd .. && cd webapp
 
 Add any missing node modules:
 
-## npm i
+### npm i
 
 
 You can run the Python/Django server by going into backend and activating the server like so:
 
-## cd backend && python manage.py runserver
+### cd backend && python manage.py runserver
 
 which you can access at url localhost:8000.
 
 
 You could run the React Javascript server on localhost:3000 likewise by typing the following in the main project folder:
 
-## cd webapp && npm start
+### cd webapp && npm start
 
 
 
