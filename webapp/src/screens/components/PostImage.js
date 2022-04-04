@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+import DisplayImage from '../DisplayImage';
+
+
+
 
 class PostImage extends Component {
 
@@ -46,7 +51,20 @@ class PostImage extends Component {
                    id="image"
                    accept="image/png, image/jpeg"  onChange={this.handleImageChange} required/>
           </p>
+
+        {/* Page Navigator Code */}
+        <nav
+            style={{
+            borderBottom: "solid 1px",
+            paddingBottom: "1rem",
+            }}
+            >
+
+              <Link to="/DisplayImage" component={DisplayImage}>
           <input type="submit"/>
+              </Link>
+
+        </nav>
         </form>
       </div>
     );
