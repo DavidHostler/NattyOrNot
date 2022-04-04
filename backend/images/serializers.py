@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import ImageHandler, TestModel
+from .models import ImageHandler, TestModel, PredictionsModel
 
 class ImageSerializer(serializers.HyperlinkedModelSerializer):
     
@@ -16,3 +16,10 @@ class TestSerializer(serializers.HyperlinkedModelSerializer):
 
         model = TestModel
         fields = ['name']
+
+
+class PredSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = PredictionsModel
+        fiels = ['preds']
+        

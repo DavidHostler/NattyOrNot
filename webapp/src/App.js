@@ -9,6 +9,7 @@ import axios from 'axios';
 import {Component} from 'react';
 import PostText from './screens/components/PostText';
 import PostImage from './screens/components/PostImage';
+import DisplayImage from './screens/components/DisplayImage';
 
 
 
@@ -27,8 +28,10 @@ function App(){
    
   return(
     <main>
-        <PostText/>
+        {/* <PostText/> */}
         <PostImage/>
+        {/* <DisplayImage/> */}
+
     </main>
   );
   

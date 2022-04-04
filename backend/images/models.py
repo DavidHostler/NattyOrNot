@@ -19,3 +19,11 @@ class TestModel(models.Model):
         def __str__(self):
 
             return self.name
+
+
+    
+class PredictionsModel(models.Model):
+    preds = models.DecimalField(max_digits = 13, decimal_places=5, default = 0.00000)
+
+
+    

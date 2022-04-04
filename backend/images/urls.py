@@ -24,9 +24,12 @@ router = routers.DefaultRouter()
 router.register('images', views.ImageViewSet, basename='images')
 router.register('tests', views.TestViewSet, basename='tests')
 
+
 urlpatterns = [
     path('', include(router.urls)),
     #path('tests/', views.TestViewSet.as_view()),
     #path('images/', views.ImageViewSet.as_view()),
+    #path('tests/', views.TestView.as_view(), name='tests'),
+    path('preds/', views.Preds.as_view(), name='preds'),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

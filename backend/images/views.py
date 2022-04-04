@@ -10,8 +10,8 @@ from rest_framework.decorators import api_view
 
 from rest_framework.views import APIView
 
-from .models import ImageHandler, TestModel
-from .serializers import ImageSerializer, TestSerializer
+from .models import ImageHandler, TestModel, PredictionsModel
+from .serializers import ImageSerializer, TestSerializer, PredSerializer
 
 
 class ImageViewSet(viewsets.ModelViewSet):
@@ -38,4 +38,16 @@ class TestViewSet(viewsets.ModelViewSet):
     queryset = TestModel.objects.all().order_by('name')
     serializer_class = TestSerializer
 
-    
+
+
+class Preds(APIView):
+
+    queryset = PredictionsModel.objects.all()
+    serializer_class = PredSerializer
+
+    def get(self, request):
+        preds = PredictionsModel.objects.all()
+        serializer = PrediSerializer(preds, many=True)
+        return Response("Welcome to pred")
+        
+ 
