@@ -6,7 +6,7 @@ This is a play on the classic fitness community meme, and likely won't be that f
 
 Either way, I think it's really cool to use technology to drug-test a lifter at a glance using AI. 
 
-### DISCLAIMER:
+###DISCLAIMER:
 
 An AI program trained on a few thousand images of bodybuilders is never going to be fully accurate, as the training data labels may often be 
 incorrect. This is not actually a surefire or safe way to verify whether somebody is on PED's. In fact, the idea actually came from another joke- that one time Tinder claimed on April 1st to be introducing a "height verification feature"- hence the timing of this announcement, it was in fact a joke at the expense of men who lie about their height on dating apps in order to get dates. It is in that same spirit I am making this app at the expense of so-called fake-naturals- the AI's predictions are to be taken humorously and not as a serious indictment of someone's claim to naturality.
