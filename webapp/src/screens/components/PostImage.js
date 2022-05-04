@@ -60,9 +60,9 @@ class PostImage extends Component {
             }}
             >
 
-              <Link to="/DisplayImage" component={DisplayImage}>
+              {/* <Link to="/DisplayImage" component={DisplayImage}> */}
           <input type="submit"/>
-              </Link>
+              {/* </Link> */}
 
         </nav>
         </form>
