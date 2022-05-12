@@ -11,7 +11,7 @@ import {
   Route,
 } from "react-router-dom";
 import PostImage from './screens/components/PostImage';
-import DisplayImage from './screens/DisplayImage';
+import DisplayPrediction from './screens/DisplayPrediction';
 
 
 const rootElement = document.getElementById("root");
@@ -21,7 +21,7 @@ render(
   <Routes>
     <Route path="/" element={<App />} />
     <Route path="PostImage" element={<PostImage/>}/>
-    <Route path="DisplayImage" element={<DisplayImage/>}/>
+    <Route path="DisplayPrediction" element={<DisplayPrediction/>}/>
   </Routes>
   </BrowserRouter>,
   rootElement

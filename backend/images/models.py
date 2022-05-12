@@ -23,7 +23,13 @@ class TestModel(models.Model):
 
     
 class PredictionsModel(models.Model):
-    preds = models.DecimalField(max_digits = 13, decimal_places=5, default = 0.00000)
+    #preds = models.CharField(max_length=101)
+    preds= models.DecimalField(max_digits = 4, decimal_places=2, default = 0.00000)
+    #models.DecimalField(max_digits = 13, decimal_places=5, default = 0.00000)
+
+    class Meta:
+        def __str__(self):
+            return self.preds
 
 
     

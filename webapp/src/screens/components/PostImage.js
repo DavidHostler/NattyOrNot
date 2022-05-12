@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import DisplayImage from '../DisplayImage';
-
+import DisplayPrediction from '../DisplayPrediction';
+import FrontPage from '../design/FrontPage';
 
 
 
@@ -44,6 +44,14 @@ class PostImage extends Component {
   render() {
     return (
       <div className="App">
+        <div>
+          <h1>
+            Natty Or Not
+          </h1>
+        </div>
+
+        <FrontPage/>
+
         <form onSubmit={this.handleSubmit}>
            
           <p>
@@ -60,7 +68,7 @@ class PostImage extends Component {
             }}
             >
 
-              {/* <Link to="/DisplayImage" component={DisplayImage}> */}
+              {/* <Link to="/DisplayPrediction" component={DisplayPrediction}> */}
           <input type="submit"/>
               {/* </Link> */}
 

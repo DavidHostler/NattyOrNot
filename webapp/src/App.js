@@ -9,7 +9,10 @@ import axios from 'axios';
 import {Component} from 'react';
 import PostText from './screens/components/PostText';
 import PostImage from './screens/components/PostImage';
-import DisplayImage from './screens/DisplayImage';
+import DisplayPrediction from './screens/DisplayPrediction';
+import LoadImage from './screens/components/LoadImage';
+import FetchImage from './screens/data/FetchImage';
+// import FrontPage from './screens/design/FrontPage';
 
 
 
@@ -30,8 +33,10 @@ function App(){
     <main>
         {/* <PostText/> */}
         <PostImage/>
-        {/* <DisplayImage/> */}
-
+        <LoadImage/>
+        <div>
+        <DisplayPrediction/>
+        </div>
     </main>
   );
   

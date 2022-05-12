@@ -21,5 +21,5 @@ class TestSerializer(serializers.HyperlinkedModelSerializer):
 class PredSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = PredictionsModel
-        fiels = ['preds']
+        fields = ['preds']
         

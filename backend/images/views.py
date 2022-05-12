@@ -40,14 +40,17 @@ class TestViewSet(viewsets.ModelViewSet):
 
 
 
-class Preds(APIView):
-
-    queryset = PredictionsModel.objects.all()
+class PredsViewSet(viewsets.ModelViewSet):
+    queryset = PredictionsModel.objects.all().order_by('preds')
     serializer_class = PredSerializer
 
-    def get(self, request):
-        preds = PredictionsModel.objects.all()
-        serializer = PrediSerializer(preds, many=True)
-        return Response("Welcome to pred")
+    # queryset = PredictionsModel.objects.all()
+    # serializer_class = PredSerializer
+
+    # def get(self, request):
+    #     preds = PredictionsModel.objects.all()
+    #     serializer = PrediSerializer(preds, many=True)
+    #     return Response("Welcome to pred")
+    
         
  
