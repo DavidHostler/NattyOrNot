@@ -50,6 +50,20 @@ Proceed to install the required Python dependencies for the environment
 
 ### pip install -r requirements.txt
 
+The reason for this step is that if I had included all libraries pre-installed, then the project's size would likely swell to way over what Github
+
+would allow users to upload or download, and that would suck. Therefore, run the above script to install any dependencies you'll need (e.g. Tensorflow, 
+
+numpy, psycopg2, Django Cors Headers, and OpenCV. These are altogether massive).
+
+Additionally, when I get around to Dockerizing and beautifying parts of the project, the above install script will be included in the Dockerfile, 
+
+as will all other bash scripts in this tutorial. That should make life easier for you whether you're a developer who doesn't lift, a bodybuilder who 
+
+doesn't code, or someone like me who is passionate about both. Or maybe you're none of the above and you got lost on the internet. If so, that's ok, give 
+
+NattyOrNot a whirl anyway!
+
 There are a few that I will add later to requirements.txt to save users a little time adding any additional installs, but please bear with me til then!
 
 You should have everything in Python set up to use the Django REST Framework; next we will update our ReactJS dependencies!
@@ -75,14 +89,21 @@ You could run the React Javascript server on localhost:3000 likewise by typing t
 ### cd webapp && npm start
 
 Currently, this repository is not fully completed, so apologies if a few of the described features are currently missing. 
+
 The app should be fully functional before the end of March.
+
 Additionally, at the time of this first commit, it has been barely a week since I started this project, so trust that it won't take long to make the 
+
 app totally functional.
 
-Additionally, if people think this is cool, then I will develop a mobile version with React-Native for use on cell phones.
-This is more convenient, since people tend to store physique pics on their cell phones rather than on their personal computers.
+Additionally, if I get enough good feedback from people , then I will develop a mobile version with React-Native for use on cell phones just 
 
-I hope you enjoy this app and may it inspire you to acquire more gainz!!! :)
+to show off that I'm pretty good at mobile development too, and furthermore to show how easy it is to recreate an app from a webpage if you understand
+
+what data is being passed to and from it, as well as the design layout thereof.
+
+
+I sincerely hope that you enjoy this pet project, and that it inspires you to acquire more gainz!!! :)
 
 
 
