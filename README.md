@@ -138,7 +138,11 @@ I sincerely hope that you enjoy this pet project, and that it inspires you to ac
 
 
 
+### STATUS UPDATE 
 
+The basic fullstack project is complete, I just need to beautify the remaining css so that this doesn't look like a site from 1998.
+Most work I've had time to do was in dealing with data (i.e. backend development, preprocessing, machine learning, and fetching said data in the webpage)
+I need to wireframe and then code a handsome looking design once I find the time given that times are quite hectic.
 
 
 
