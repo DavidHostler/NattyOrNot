@@ -20,10 +20,16 @@ function LoadImage() {
     fetchImage();
   }, []);
 
+ 
+
   return (
-    <>
+    <div className={classes['polaroid']}>
       <img src={img} alt="icons" className={classes['img']}/>
-    </>
+      <div className={classes['image_container']}/> 
+      <div className={classes['textbox']}>
+        <p>Your Physique</p>
+      </div>
+    </div>
   );
 }
 

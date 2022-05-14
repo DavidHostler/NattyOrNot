@@ -43,14 +43,16 @@ class DisplayPrediction extends  Component{
  
 
   render() {
-    
+   
     return (
       <div>
         
         {
           this.state.preds
             .map(pred =>
-              <div>{'The probability of you being natural is: ' + pred.preds}</div>
+              <div   className={classes['predictionStyle']}>
+                {'The probability of you being natural is: ' + pred.preds}
+              </div>
             )
         }
             {/* {console.log(this.state.preds)} */}
