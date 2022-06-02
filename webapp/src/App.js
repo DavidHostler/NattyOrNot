@@ -2,18 +2,19 @@ import React, { Component } from 'react';
 
 import logo from './logo.svg';
 import './App.css';
-import UploadScreen from './screens/UploadScreen';
+// import UploadScreen from './screens/UploadScreen';
 
-import Cart from './screens/cart/Cart';
+// import Cart from './screens/cart/Cart';
  
 
-import axios from 'axios';
-import PostText from './screens/components/PostText';
-import PostImage from './screens/components/PostImage';
-import DisplayPrediction from './screens/DisplayPrediction';
+// // import axios from 'axios';
+// import PostText from './screens/components/PostText';
+// import DisplayPrediction from './screens/DisplayPrediction';
+// import FetchImage from './screens/data/FetchImage';
+// // import FrontPage from './screens/design/FrontPage';
+
 import LoadImage from './screens/components/LoadImage';
-import FetchImage from './screens/data/FetchImage';
-// import FrontPage from './screens/design/FrontPage';
+import PostImage from './screens/components/PostImage';
 
 
 
@@ -21,10 +22,9 @@ import FetchImage from './screens/data/FetchImage';
 
 
 
-
-const api = axios.create({
-  baseURL: `http://127.0.0.1:8000/tests/`
-})
+// const api = axios.create({
+//   baseURL: `http://127.0.0.1:8000/tests/`
+// })
 
 
 
@@ -55,7 +55,7 @@ class App extends Component{
         <PostImage/>
         <LoadImage/>
         <div>
-        <DisplayPrediction/>
+        {/* <DisplayPrediction/> */}
         </div>
     </main>
     </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, Component } from "react";
-import axios from 'axios';
+// import axios from 'axios';
 import classes from './css/LoadImage.module.css';
 //Rewrite this to fetch an array of image urls, form an a stack then pop the most 
 //Recent image as the one being used
