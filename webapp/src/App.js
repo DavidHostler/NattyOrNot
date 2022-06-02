@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-
+import Button from './screens/components/Button';
 import LoadImage from './screens/components/LoadImage';
 import PostImage from './screens/components/PostImage';
 
@@ -58,9 +58,7 @@ class App extends Component{
            
         <nav>
           <Link to="/DisplayPrediction">
-          <button>
-          Click here to see results
-            </button>
+          <Button children="To Predictions"/>
           </Link>
         </nav>
         

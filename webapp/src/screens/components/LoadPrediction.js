@@ -38,14 +38,6 @@ const LoadPrediction = () => {
   return (
     
 
-    // <div className={classes['polaroid']}>
-    //    <img src={prediction} alt="icons" className={classes['img']}/>
-    //    <div className={classes['image_container']}/> 
-    //    <div className={classes['textbox']}>
-    //      <p>Your prediction</p>
-    //    </div>
-    //  </div>
-    
     <div>
         <h1>The probability that you are natty is...</h1>
         <h3 style={{textAlign:'center'}}>{prediction} {'%'}</h3>

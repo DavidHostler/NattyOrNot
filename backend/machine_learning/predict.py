@@ -5,7 +5,7 @@
 
 
 import requests
- 
+import time
 
 #Machine learning related imports 
 
@@ -65,8 +65,26 @@ input_data[0].shape
 # Get the image
 MEDIA = '/home/dolan/Downloads/NattyOrNot/backend/media/images/'
 
-images_folder = os.listdir(MEDIA)
-most_recent_upload_filename = images_folder.pop(0)
+#Time to use a little recursion....
+def get_most_recent_upload(media_path): #media_path = MEDIA above
+    images_folder = os.listdir(media_path)
+    if len(images_folder) == 0:
+        print("There are currently no new images provided...")
+        time.sleep(5)
+        return get_most_recent_upload(media_path)
+    
+    return images_folder.pop(0)
+
+most_recent_upload_filename = get_most_recent_upload(MEDIA)
+
+
+
+# images_folder = os.listdir(MEDIA)
+# if len(images_folder) == 0:
+#     #Check the number of files in the folder every 5 seconds or so...
+#     images_folder = os.listdir(MEDIA)
+
+# most_recent_upload_filename = images_folder.pop(0)
 most_recent_upload = (MEDIA + most_recent_upload_filename)
 most_recent_upload = cv2.imread(most_recent_upload,  cv2.IMREAD_GRAYSCALE)
 #print(most_recent_upload)
