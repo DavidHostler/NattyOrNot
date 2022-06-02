@@ -41,7 +41,15 @@ class PostImage extends Component {
         .catch(err => console.log(err))
   };
 
+
+   
   render() {
+    const buttonStyle = {'backgroundColor':'green',
+      'color': 'purple',
+      'width':'50px',
+      'length':'30px',
+      'borderRadius':'9px'
+    }
     return (
       <div className="App">
         <div>
@@ -57,7 +65,13 @@ class PostImage extends Component {
           <p>
             <input type="file"
                    id="image"
-                   accept="image/png, image/jpeg"  onChange={this.handleImageChange} required/>
+                   accept="image/png, image/jpeg"  
+                   onChange={this.handleImageChange} 
+                   style={this.buttonStyle}
+
+                   >
+                  
+          </input>
           </p>
 
         {/* Page Navigator Code */}
@@ -69,7 +83,10 @@ class PostImage extends Component {
             >
 
               {/* <Link to="/DisplayPrediction" component={DisplayPrediction}> */}
-          <input type="submit"/>
+          <input type="submit" 
+                   style={this.buttonStyle}
+          
+          />
               {/* </Link> */}
 
         </nav>
