@@ -2,29 +2,21 @@ import React, { Component } from 'react';
 
 import logo from './logo.svg';
 import './App.css';
-// import UploadScreen from './screens/UploadScreen';
 
-// import Cart from './screens/cart/Cart';
- 
-
-// // import axios from 'axios';
-// import PostText from './screens/components/PostText';
-// import DisplayPrediction from './screens/DisplayPrediction';
-// import FetchImage from './screens/data/FetchImage';
-// // import FrontPage from './screens/design/FrontPage';
 
 import LoadImage from './screens/components/LoadImage';
 import PostImage from './screens/components/PostImage';
 
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
-
-
-
-
-
-// const api = axios.create({
-//   baseURL: `http://127.0.0.1:8000/tests/`
-// })
+import DisplayPrediction from './screens/DisplayPrediction';
+import FrontPage from './screens/design/FrontPage';
+// import
 
 
 
@@ -42,28 +34,46 @@ class App extends Component{
       backgroundRepeat: 'no-repeat',
   };
   
-  // const uploadedImage = {
-  //   image: 
-  //   // border-radius: '8px',
-  // }
+ 
   
   return(
+    // <div  style={BackgroundColour}>
+    //   {/* <Router> */}
+    //     {/* <PostText/> */}
+        
+    //     <PostImage/>
+    //     <LoadImage/>
+    //     <div>
+    //     {/* <DisplayPrediction/> */}
+    //     </div>
+    //   {/* <Routes>
+    //     <Route to="/DisplayPrediction" element={<DisplayPrediction/>}/>
+    //   </Routes> */}
+    //   {/* </Router> */}
+   
+    // </div>
+   
     <div  style={BackgroundColour}>
-    <main>
-        {/* <PostText/> */}
-
-        <PostImage/>
-        <LoadImage/>
-        <div>
-        {/* <DisplayPrediction/> */}
+            <PostImage/>
+           
+        <nav>
+          <Link to="/DisplayPrediction">
+          <button>
+          Click here to see results
+            </button>
+          </Link>
+        </nav>
+        
+        <Routes>
+          <Route path="DisplayPrediction" element={<DisplayPrediction/>}/>
+        </Routes>
         </div>
-    </main>
-    </div>
   );
   
 }
 
 }
+
 
 export default App;
  

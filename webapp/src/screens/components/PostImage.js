@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 // import { Link } from 'react-router-dom';
-// import DisplayPrediction from '../DisplayPrediction';
+import DisplayPrediction from '../DisplayPrediction';
 import FrontPage from '../design/FrontPage';
+import { Link, Route, Routes } from 'react-router-dom';
 
 
 
@@ -70,7 +71,7 @@ class PostImage extends Component {
                    style={this.buttonStyle}
 
                    >
-                  
+                     
           </input>
           </p>
 
@@ -82,7 +83,7 @@ class PostImage extends Component {
             }}
             >
 
-              {/* <Link to="/DisplayPrediction" component={DisplayPrediction}> */}
+          {/* <Link > */}
           <input type="submit" 
                    style={this.buttonStyle}
           
@@ -91,6 +92,8 @@ class PostImage extends Component {
 
         </nav>
         </form>
+
+        
       </div>
     );
   }
