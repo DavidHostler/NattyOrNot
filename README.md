@@ -16,8 +16,13 @@ The response is saved as a binary response "Natty" or "Not" and is rendered in R
 
 ## MOTIVATION
 
-The primary motivation for this project is mostly from an inside joke in the bodybuilding community. While I do have a background in mathematical physics and machine learning, I am not 
-Greg Doucette (an individual famous for his ability to identify whether somebody is a natural lifter!)
+![alt text](https://www.gymwolf.com/images/exercises/1285_1.jpg)
+
+The primary motivation for this project is to get my bench press to 225 pounds for reps.
+Just kidding. This project definitely motivated me to do that incidentally, however the actual reason for doing this project was 
+to see if I could use my knowledge of data science and web development to identify steroid use.
+While I do have a background in mathematical physics and machine learning, I am not Coach Greg Doucette 
+(a bodybuilder on YouTube famous for his ability to identify steroid use with his "laser eyes"... if you know you know!)
 Some suspect that Coach Greg is himself, not unlike my program, an artificial intelligence designed to classify physiques.
 Of course, the neural network I've trained was trained on data that I combed through based on what type of physique looks roided and which one does not.
 Given that my judgment is imperfect, this should not be taken seriously as a way of identifying "fake natties"!
