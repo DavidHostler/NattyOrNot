@@ -2,6 +2,11 @@
 This is a project born of gym-bro humour and a general love of software development.
 
 
+
+![alt text](https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2009/09/Building-a-Bodybuilder-Back.jpg)
+
+
+
 This project is a full stack web application that permits users to upload an image of their physique and get a response as to whether they 
 are Natty or not. The app uses React to submit the image from your personal files to a Python/Django rest framework backend, which saves
 the image to a stack of images. A neural network pops the most recent file off the stack and predicts whether the image is of a "natty" 
